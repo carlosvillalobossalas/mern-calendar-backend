@@ -57,7 +57,7 @@ const loginUsuario = async (req, res = response) => {
         if (!usuario) {
             return res.status(400).json({
                 ok: false,
-                msg: 'El usuario existe con ese correo'
+                msg: 'El usuario no existe con ese correo'
             })
         }
 
